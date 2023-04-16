@@ -102,23 +102,3 @@ extension ViewController {
         }
     }
 }
-
-struct ContentViewController: UIViewControllerRepresentable {
-
-    typealias UIViewControllerType = ViewController
-
-    func makeUIViewController(context: Context) -> UIViewControllerType {
-        return ViewController()
-    }
-
-    func updateUIViewController(_ uiViewController: ViewController, context: Context) {}
-}
-
-struct ContentViewController_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentViewController()
-            .edgesIgnoringSafeArea(.all)
-            .colorScheme(.light) // or .dark
-    }
-}
-
